@@ -7,6 +7,19 @@
   Creare un carosello come nella foto allegata.
 */
 
+/*
+  Milestone 1:
+  Ora rimuoviamo i contenuti statici e usiamo l’array di oggetti letterali per 
+  popolare dinamicamente il carosello.
+  Al click dell'utente sulle frecce verso sinistra o destra, 
+  l'immagine attiva diventerà visibile e dovremo aggiungervi titolo e testo.
+ */
+
+// Seleziona gli elementi del dom 
+const sliderImgElement = document.querySelector('.slider > .images')
+const prevBtnElement = document.querySelector('.prev')
+const nextBtnElement = document.querySelector('.next')
+
 const carousel = [
   {
     url:'./assets/img/01.webp',
