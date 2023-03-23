@@ -21,12 +21,30 @@
   Come nel primo carosello realizzato, focalizziamoci prima sulla creazione del markup statico:
   costruiamo il container e inseriamo l'immagine grande in modo da poter stilare lo slider.
  -->
-  <header>
-    <!-- place navbar here -->
+  <header class="text-center text-bg-dark p-2">
+    <h1>Carosello</h1>
   </header>
   <main>
     <div class="container">
-      
+      <div class="row d-flex align-content-center justify-content-center">
+        <div class="col-4">
+          <div class="card">
+            <div class="slider">
+              <div class="images img-fluid text-center">
+                <img src="./assets/img/01.webp" class="card-img-top">
+              </div>
+              <div class="card-body text-bg-dark text-center"> 
+                <h2>Spiderman</h2>
+                <h3 class="card-text">Marvel heroe</h3>
+              </div>
+              <nav>
+                <button class="prev">&and;</button>
+                <button class="next">&or;</button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
