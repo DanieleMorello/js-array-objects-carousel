@@ -9,20 +9,39 @@ img {
   height: 45rem;
 }
 
-nav {
+.slider img:not(.active) {
+  display: none;
+}
+
+.slider {
   position: relative;
 }
 
+nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 .prev, 
 .next {
-  position: relative;
-  left: 11rem;
+  margin: 1rem;
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prev {
-  top: -51rem;
+  top: -23rem;
 }
 
 .next {
-  top: -10rem;
+  top: -5rem;
 }
